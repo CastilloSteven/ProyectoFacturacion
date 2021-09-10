@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Proyecto de Facturación</title>
+	<script src="factura.js"></script>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="Estilos.css">
+</head>
+<body>
+<div class="formFac">
+	<h1>Facturación</h1>
+<form id="formulario">
+<div class="izq">
+	<label>Codigo</label><br>
+		<input type="number" id="CodProducto" placeholder="Codigo del producto"><br>
+</div>
+<div class="der">
+	<label>Descripción</label><br>
+		<input type="text" id="DesProducto" placeholder="Descripción del producto"><br>
+</div>
+<div class="izq">
+	<label>Precio con Iva</label><br>
+		<input type="number" id="PreProducto" placeholder="Precio del producto"><br>
+</div>
+<div class="der">
+	<label>Cantidad</label><br>
+		<input type="number" id="CanProducto" placeholder="Cantidad de productos"><br>
+</div>
+<div class="izq">
+	<label>% del IVA</label><br>
+		<input type="number" id="IVAProducto" placeholder="IVA del producto"><br>
+</div>
+<div class="boton">
+	<input type="button" onclick="SeguirFacturando()" value="Siguiente Producto" class="ingresar"><br>
+	<input type="button" onclick="TerminarFactura();SeguirFacturando()" value="Facturar Productos" class="terminar"><br>
+</div>
+</form>
+</div>
+<div class="tablaFac">
+<table id="tabla">
+	<tr class="trPrincipal">
+		<th>Codigo</th>
+		<th>Descripción</th>
+		<th>Precio</th>
+		<th>Cantidad</th>
+		<th>% del IVA</th>
+		<th>SubTotal Sin IVA</th>
+		<th>Valor IVA</th>
+		<th>Total con IVA Incluido</th>
+	</tr>
+</table>
+</div>
+</body>
+</html>

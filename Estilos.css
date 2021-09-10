@@ -1,0 +1,81 @@
+*{
+	text-align: center;
+	font-family: calibri;
+}
+h1{
+	background-color: #72B8FE;
+	margin:0 0;
+	padding: 20px;
+	border-top-right-radius: 30px;
+	border-top-left-radius: 30px;
+}
+/*formulario*/
+form{
+	display: grid;
+	grid-template-columns:1fr 1fr;
+	border:1px solid black;
+	border-top: none;
+}
+.formFac{
+	width: 50%;
+	margin-left: 25%;
+}
+.izq,.der,.boton{
+	margin:15px;
+	padding: 5px;
+}
+.izq input, .der input{
+	border: none;
+	border-bottom: 1px solid black;
+	margin-top: 5px;
+}
+input{
+	width: 80%;
+}
+.boton input{
+	padding: 5px;
+	margin:5px;
+	font-size: 17px;
+	border-radius: 5px;
+}
+.boton .ingresar{
+	background-color: lightgreen;
+	border:1px solid green;
+}
+.boton .terminar{
+	background-color: #E25D5D;
+	border:1px solid red;
+}
+.boton .ingresar:hover{
+	background-color: green;
+}
+.boton .terminar:hover{
+	background-color: red;
+
+}
+
+/*tabla*/
+
+.tablaFac{
+	margin-top: 20px;
+	width: 70%;
+	margin-left: 15%;
+}
+table{
+	border-collapse: collapse;
+}
+th,td{
+	width: 10%;
+	border-bottom: 1px solid black;
+	padding: 10px;
+}
+th{
+	background-color: #72B8FE; 
+}
+tr:hover{
+	background-color: lightblue;
+}
+td:hover{
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
